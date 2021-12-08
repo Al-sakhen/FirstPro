@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    --secColor:rgba(255, 255, 255, 0.7);
+    --mainColor: #f4623a;
+
+}
+.container{
+    width:80%;
+    margin: auto;
+}
+body{
+    
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+
+.navbar{
+    /* background-color: #29975b; */
+    position: fixed;
+    width: 100%;
+    margin-top: 15px;
+}
+.navbar .container{
+    overflow: auto;
+}
+.logo{
+    float: left;
+    width: 35%;
+    color: var(--secColor);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.nav{
+    float: right;
+    width: 65%;
+    text-align: right;
+    font-size: 20px;
+}
+.nav .list{
+    list-style: none;
+}
+.list-item{
+    display: inline-block;
+}
+.link-nav{
+    text-decoration: none;
+    color: var(--secColor);
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+
+
+
+
+
+.header-content{
+    background-image: url('../img/bg-masthead.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 -100px;
+}
+.header-content-items{
+    text-align: center;
+    padding-top: 300px;   
+}
+.main-title{
+    color: #fff ;
+    text-transform: uppercase;
+    font-size: 50px;
+    /* background-color: red; */
+    width: 50%;
+    margin: auto;
+}
+.line{
+    background-color: var(--mainColor);
+    height: 3px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    margin: 20px auto;
+}
+.main-desription{
+    color: var(--secColor);
+    font-size: 18px;
+    margin: auto;
+    width: 32%;
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    background-color: var(--mainColor);
+    width: fit-content;
+    margin:30px auto;
+    padding: 25px;
+    border-radius:39px;
+}
+.header .overlay{
+    background:linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    height: 100%;
+}
+/* end header */
+
+
+
+
+
+
+/* start about */
+.about{
+    background-color: var(--mainColor);
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.about-heading{
+    color: #fff;
+}
+.about .line{
+    background-color: #fff;
+
+}
+.about-description{
+    color :rgba(255, 255, 255, 0.75);
+    width: 35%;
+    margin: auto;
+}
+.about .link{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+}
+/* end about */
+
+
+
+/* start services */
+.services{
+    padding-top: 100px;
+    text-align: center;
+
+}
+.services-heading{
+    text-transform: capitalize;
+}
+.services-items .container{
+    overflow: auto;
+
+}
+.service-item{
+    float: left;
+    width: 25%;
+}
+.service-item .fas{
+    color: var(--mainColor);
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.service-heading{
+    text-transform: capitalize;
+}
+.service-description{
+    color:#6c757d !important;
+
+}
+
+/* end services */
+
+/* start portfolio */
+.portfolio{
+    padding-top: 100px;
+}
+
+.portfolio-items{
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item{
+    float: left;
+    width: 33.33%;
+}
+.portfolio-item{
+    position: relative;
+    
+}
+.portfolio-item img{
+    display: block;
+    width: 100%;
+
+}
+
+.portfolio .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: var(--mainColor);
+    opacity: 0;
+}
+.portfolio-item:hover .overlay{
+    opacity: .8;
+}
+.overlay-content{
+    text-align: center;
+    padding-top: 125px;
+}
+/* end portfolio */
+
+
+
+
+
+
+
+/* start sownload */
+.download{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #343a40;
+}
+.download-heading{
+    color: #fff;
+    text-transform: capitalize;
+}
+.download .link{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+}
+/* end download */
+
+
+
+/* start contact */
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.contact-title{
+    text-transform: capitalize;
+}
+
+.conact-description{
+    color: #6c757d !important;
+    width: 31%;
+    margin: auto;
+    text-align: center;
+}
+.contact-items{
+    overflow: auto;
+    width: 60%;
+    margin: auto;
+}
+.contact-item{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.contact-item .fas{
+    display: block;
+    font-size: 40px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+.contact-item span{
+    color: var(--mainColor);
+    font-size: 20px;
+}
+
+
+/* end contact */
+
+
+
+/* start footer */
+.footer{
+    padding-top: 55px;
+    padding-bottom: 50px;
+    background-color: rgb(248, 249, 250);
+    text-align: center;
+}
+/* end footer */
+
+/* Extra Small devices  */
+@media (max-width: 575.98px) {  
+
+    .logo , .nav{
+        width: 100%;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .nav .list{
+        display: block;
+
+    }
+    .main-title{
+        width: 80%;
+        font-size: 35px;
+    }
+    .main-desription{
+        width: 75%;
+    }
+    .about-description{
+        width: 75%;
+    }
+    .service-item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .portfolio .portfolio-item{
+        width: 100%;
+    }
+    .overlay-content{
+        padding-top: 90px;
+    }
+
+    .conact-description{
+        width: 75%;
+    }
+    .contact-item span{
+        font-size: 15px;
+    }
+}
+
+/* Small devices   */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .logo , .nav{
+        width: 100%;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .nav .list{
+        display: block;
+
+    }
+    .main-title{
+        width: 80%;
+        font-size: 35px;
+    }
+    .main-desription{
+        width: 75%;
+    }
+    .about-description{
+        width: 75%;
+    }
+    .service-item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .portfolio .portfolio-item{
+        width: 50%;
+    }
+    .overlay-content{
+        padding-top: 50px;
+    }
+    .conact-description{
+        width: 75%;
+    }
+    .contact-item span{
+        font-size: 15px;
+    }
+} 
+
+/* Medium devices  */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .logo , .nav{
+        width: 100%;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .nav .list{
+        display: block;
+
+    }
+    .main-title{
+        width: 80%;
+        font-size: 35px;
+    }
+    .main-desription{
+        width: 75%;
+    }
+    .about-description{
+        width: 75%;
+    }
+    .service-item{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .portfolio .portfolio-item{
+        width: 50%;
+    }
+    .overlay-content{
+        padding-top: 60px;
+    }
+    .conact-description{
+        width: 75%;
+    }
+
+}
+
+
+
+
+
+    
+
+
+
+    
+
+/* Large devices  */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* Extra large devices  */
+@media (min-width: 1200px) {  
+    
+}
+
+    
